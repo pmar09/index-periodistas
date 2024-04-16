@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodistas Unidos</title>    
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+<style>
+ .container {
+            width: 90%; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+    
+    .logos-container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: dm serif display;
+        }
+        
+        .logo1 {
+            width: 20%; 
+            margin-right: 20px; 
+        }
+
+        .logo2 {
+            width: 15%;
+            margin-left: 20px;
+        }
+
+        .title-container {
+            text-align: center;
+            flex-grow: 1; 
+        }
+
+        .subtitle-container {
+            width: 100%; 
+        margin: 0 auto; 
+        padding: 20px; 
+        background-color: white;  
+        border-radius: 2px; 
+        font-family: dm serif display;
+        color:#84b084; 
+        }
+        .saludmental-container {
+            width: 90%; 
+        margin: 0 auto; 
+        padding: 20px; 
+        background-color: white;  
+        border: 1px solid white; 
+        border-radius: 2px; 
+        font-family: roboto, sans-serif;
+        text-align: justify;
+        }
+        .carousel-inner {
+            width: 80%; 
+            height: 20%;
+            margin: auto;
+        }
+
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 60%; 
+            height: auto;
+            margin: auto;
+        }
+        .icons-container {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección del flujo a columna */
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  width: 110%;
+}
+
+.image-container {
+  width: 100%; /* Ajusta el ancho al 100% para ocupar todo el espacio disponible */
+  height: auto;
+  text-align: center;
+  margin: 10px;
+}
+
+.image-container img {
+  width: 70%; /* Ancho de la imagen */
+  height: auto;
+}
+
+
+
+.seccionesverdes-container {
+        width: 100%; 
+        margin-top: 20px;
+margin-bottom: 20px;
+        padding: 20px; 
+        background-color: #84b084; 
+        border: 1px solid #84b084; 
+        font-family: dm serif display;
+        color: white; 
+        text-align: center;
+        
+    }
+    .seccionesamarillas-container {
+        width: 100%; 
+        margin: 0 auto; 
+        padding: 20px; 
+        background-color: #e3b155; 
+        border: 1px solid #e3b155 ; 
+        font-family: dm serif display;
+        border-radius: 5px; 
+       
+        }
+        .container p {
+    font-family: roboto; /* Tipo de fuente */
+    font-size: 20px; /* Tamaño de letra */
+    color: #000000; /* Color del texto */
+    line-height: 1.5; /* Altura de línea */
+        }
+        
+        .image2 {
+            height: auto;
+            flex-shrink: 0; 
+        }
+    .linkone-container {
+        width: 100%; 
+        margin: 0 auto; 
+        padding: 20px; 
+        background-color: #fff1e6; 
+        border: 1px solid #fff1e6 ; 
+        border-radius: 2px; 
+       
+    }
+        .two-container {
+        width: 100%; 
+        margin: 0 auto; 
+        padding: 20px; 
+        background-color: #e3b155; 
+        border: 1px solid #e3b155 ; 
+        font-family: dm serif display;
+        border-radius: 5px; 
+        }
+        .three-container {
+        width: 100%; 
+        margin: 0 auto; 
+        padding: 20px; 
+        background-color: #e3b155; 
+        border: 1px solid #e3b155;
+        font-family: dm serif display;
+        border-radius: 5px;
+       
+}
+
+    .five-container {
+        width: 100%; 
+        margin: 0 auto; 
+        padding: 20px; 
+        background-color: #e3b155; 
+        border: 1px solid #e3b155;  
+        font-family: dm serif display;
+        border-radius: 5px; 
+    }
+
+    .six-container {
+        width: 100%; 
+        margin: 0 auto; 
+        padding: 20px; 
+        background-color: #fff1e6; 
+        border: 1px solid #fff1e6 ;  
+        font-family: dm serif display;
+        border-radius: 5px; 
+    }
+    .image-container img {
+  width: 100%;
+  height: auto;
+  float: right;
+}
+        .textcamaras-container {
+        width: 95%;
+        margin-top: 10px;
+       
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 2px;
+        font-family: roboto, sans-serif;
+        text-align: justify;
+        display: flex; 
+        align-items: center; 
+    }
+
+    .image-link {
+        margin-right: 50px; 
+    }
+
+    .image-link img {
+        width: 110%;
+        height: auto;
+    }
+
+    
+    .image-link .initial-image {
+        display: block;
+    }
+
+    
+    .image-link .hover-image {
+        display: none;
+    }
+
+   
+    .image-link:hover .initial-image {
+        display: none;
+    }
+
+    .image-link:hover .hover-image {
+        display: block;
+    }
+
+
+a {
+    color: #84b084; 
+    text-decoration: none; 
+}
+
+  
+  a:hover {
+    color: #e3b155; 
+  }
+
+  .colored-paragraph {
+        color: cornflowerblue; 
+    }
+  
+ 
+.destacado-inicio {
+    color: #84b084; 
+
+}
+.destacado-riesgosuno {
+    color: salmon; 
+
+}
+.destacado-riesgosdos {
+    color: cornflowerblue; 
+
+}
+
+
+.destacado-estresdos {
+    color: orangered; 
+
+}
+.destacado-consejos {
+    color: rgb(75, 3, 158); 
+
+}
+.text_riesgos-container {
+          margin-left: 20px;
+         margin-right: 50px;
+          margin-top: 20px;
+          width: 1280px;
+          height: auto;
+          text-justify: justify;
+        }
+        
+        .imageriesgos-container {
+            max-width: 25%;
+            float: right; /* Agrega esta línea para que la imagen se sitúe a la izquierda */
+            margin-right: 10px;
+            margin-left: 30px;
+
+        }
+
+        .text_estres-container {
+          margin-left: 20px;
+          margin-right: 20px;
+          width: 1280px;
+          height: auto;
+          text-justify: justify;
+        }
+        
+        .imageestresdos-container {
+            max-width: 25%;
+            float: left; /* Agrega esta línea para que la imagen se sitúe a la izquierda */
+            margin-right: 10px;
+            margin-left: 10px; /* Para separar la imagen del texto */
+        }
+        
+        .text_estresdos-container {
+            margin-right: 30px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+            width: 1280px;
+            height: auto;
+            text-justify: justify;
+        }
+        .text_consejos-container {
+          margin-left: 20px;
+          margin-right: 0px;
+          width: 1350px;
+          height: auto;
+          text-justify: justify;
+        }
+        
+        .imageconsejos-container {
+            max-width: 25%;
+            float: right; /* Agrega esta línea para que la imagen se sitúe a la izquierda */
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+        .text_consejosdos-container {
+          margin-left: 160px;
+          margin-right: 1000px;
+          width: 1000px;
+          height: auto;
+          text-justify: justify;
+        }
+        a:hover {
+            color:#84b084;
+        }
+</style>
+</head>
+<body>
+    <div class="container logos-container">
+        <img src="logouadec.png" alt="Descripción de la imagen" class="logo logo1">
+        <div class="title-container">
+            <h1 style="font-size: 60px;">Periodistas Unidos</h1> 
+        </div>
+        <img src="logofcc.png" alt="Descripción de la imagen" class="logo logo2">
+    </div>
+        <div class="container subtitle-container">
+            <center>
+<h2 style="font-size: 40px;">¿Qué es la salud mental?</h2>
+</div>
+</center>
+<div class="container saludmental-container">
+<p style="font-size: 20px;">De acuerdo a la <span class="destacado-inicio">Organización Mundial de la Salud (2018)</span> , es el bienestar físico, mental y social. No es solo la ausencia de problemas mentales, sino también <span class="destacado-inicio">sentirte bien contigo mismo</span> , manejar el estrés de la vida y trabajar de manera efectiva. 
+</p>
+<p style="font-size: 20px;">Por lo tanto, <span class="destacado-inicio">cuidar tu salud mental es tan importante como cuidar tu cuerpo.</span> Para los y las periodistas, es muy importante cuidar de su bienestar mental para poder trabajar bien, e influir de manera <span class="destacado-inicio">positiva en la comunidad</span> y disfrutar de una buena calidad de vida. 
+Además, los medios de comunicación tienen gran impacto en cómo la sociedad percibe al mundo. Por esto, el cuidado de la <span class="destacado-inicio">salud mental</span> no solo es beneficioso a nivel personal, sino que también es importante en la construcción de una narrativa más comprensiva y respetuosa en los medios.
+</p>
+</div>
+<center>
+    <a href="https://www.youtube.com/watch?v=sdKcyp-KPFA&feature=youtu.be" target="_blank">
+        <iframe width="450" height="300" src="https://www.youtube.com/embed/sdKcyp-KPFA" frameborder="0" allowfullscreen></iframe>
+        <li style="font-size: 20px;">Te invitamos a ver este video sobre salud mental en periodistas... </li>
+    </a>
+</center>
+
+
+<br>
+<div id="theCarousel" class="carousel slide" data-ride="carousel">
+<!-- Indicadores -->
+<ol class="carousel-indicators">
+<li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#theCarousel" data-slide-to="1"></li>
+<li data-target="#theCarousel" data-slide-to="2"></li>
+<li data-target="#theCarousel" data-slide-to="3"></li>
+<li data-target="#theCarousel" data-slide-to="4"></li>
+ 
+    </ol>
+<div class="carousel-inner" role="listbox">
+<div class="item active">
+<img src="carousel_riesgos.jpeg" alt="Ilustracion" > 
+<div class="carousel-caption d-none d-md-block">
+</div>
+</div>
+
+<div class="item">
+<img src="carousel_consecuencias.jpeg" alt="fotografia" width="600" height="424"> 
+<div class="carousel-caption d-none d-md-block">
+</div>
+
+      </div>
+<div class="item">
+<img src="carousel_consejos.jpeg" alt="pintura" width="600" height="424">
+<div class="carousel-caption d-none d-md-block">
+</div>
+ 
+</div>
+
+ 
+	 <div class="item">
+<img src="carousel_apoyo.jpeg" alt="diseno" width="600" height="424"> 
+<div class="carousel-caption d-none d-md-block">
+</div>
+</div>
+ 
+ 
+<div class="item">
+<img src="images/carousel_periodismo.jpeg" alt="diseno" width="600" height="424"> 
+<div class="carousel-caption d-none d-md-block">
+</div>
+</div>
+ 
+ 
+
+<a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+<span class="sr-only">anterior</span>
+</a>
+<a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+<span class="sr-only">siguiente</span>
+</a>
+</div>
+
+   
+    <div class="container seccionesverdes-container">
+   <center>
+     <h2 style="font-size: 50px;">CONTENIDO</h2>
+</center>
+</div>
+<div class="icons-container">
+    <div class="image-row">
+      <div class="image-container">
+        <a href="#section1"><img src="images/contenido_consecuencias.jpeg" alt="Image 1" width="25%" height="25%"></a>
+        <a href="#section1"><center><h1>Consecuencias</h1></a> </center>
+      </div>
+      <div class="image-container">
+        <a href="#section2"><img src="images/contenido_riesgos.jpeg" alt="Image 2" width="25%" height="25%">
+        <center><h1>Riesgos Psicosociales</h1></a></center>
+      </div>
+    </div>
+    <div class="image-row">
+      <div class="image-container">
+        <a href="#section3"> <img src="images/contenido_estres.jpeg" alt="Image 3" width="25%" height="25%">
+        <center><h1>Estrés Post Traumático</h1></a></center>
+      </div>
+      <div class="image-container">
+        <a href="#section4"><img src="images/contenido_salud.jpeg" alt="Image 4" width="25%" height="25%">
+        <center><h1>¿Cómo cuidar la salud mental en periodistas?</h1></a></center>
+      </div>
+    </div>
+  </div>
+  <div class="container seccionesamarillas-container"></div>
+<center>
+    <img id="section1" src="images/infografia.jpg" alt="descripción de la imagen" style="max-width: 70%; height: 70%; margin-top: 20px; margin-bottom: 10px;">
+    </center>
+<center>
+<div class="seccionesverdes-container">
+<h1 id="section2" style="font-size: 50px;">RIESGOS PSICOSOCIALES</h1> 
+
+</div>
+</center>
+<div class="container text_riesgos-container">
+    <div class="text">
+         <img src="riesgos_psicosociales_1.jpeg"  alt="Image description" class="imageriesgos-container"style="max-width: 25%;">
+        <p>Los <span class="destacado-riesgosuno">riesgos laborales</span> en el sector de la comunicación generalmente no se les toma importancia y cuando se habla específicamente de riesgos psicosociales su <span class="destacado-riesgosuno">importancia es nula.</span></p>
+        <p>La poca visibilidad que se le da a estas problemáticas ha traído diversos <span class="destacado-riesgosuno">problemas para los medios de comunicación,</span> siendo los riesgos psicosociales los que más han afectado al sector, deteriorando las condiciones de seguridad y salud laboral.</p>
+    <p>Esto se debe en gran medida a las <span class="destacado-riesgosuno">cargas excesivas de trabajo y los horarios irregulares</span> a los que se enfrentan los trabajadores de los medios. Es importante abordar estos desafíos para garantizar un entorno laboral más saludable y sostenible para todos los involucrados en la industria de la comunicación.</p>
+    </div>
+   
+</div>
+<div class="container subtitle-container">
+<center>
+    
+         <h2 style="font-size: 40px;">Tipos de riesgos</h2>
+        </center>
+    </div>
+<div class="container textcamaras-container">
+    <a href="https://view.genial.ly/629f709e4e27380018cf1f78" class="image-link">
+        <img src="camara1.jpg" alt="Imagen inicial" class="initial-image">
+        <img src="camara2.jpg" alt="Imagen al pasar el cursor" class="hover-image">
+    </a>
+    <div>
+        
+        <p style="font-size: 20px;">Como periodistas y medios de comunicación cada día enfrentamos diversos riesgos psicosociales que afectan nuestras vidas y a nosotros mismos. Algunos de ellos son:</p>
+        <p style="font-size: 20px;">- Horarios irregulares</p>
+        <p style="font-size: 20px;">- Riesgos físicos: dolores, <span class="destacado-riesgosdos">trastornos</span>, enfermedades.</p>
+        <p style="font-size: 20px;">- La falta de actualización de las nuevas tecnologías en trabajadores de edades avanzadas.</p>
+        <p style="font-size: 20px;">- Exposición pública y <span class="destacado-riesgosdos"> falta de privacidad.</span></p>
+        <p style="font-size: 20px;">- Perfeccionismo laboral y tensión entre compañeros por la competitividad.</p>
+        <p style="font-size: 20px;">- El apego a los <span class="destacado-riesgosdos"> dispositivos móviles</span> y su desconexión con el entorno.</p>
+        <p style="font-size: 20px;" class="colored-paragraph">Aquí te dejamos una infografía compartida por la UNESCO; sobre el tema. Da Click en la cámara:</p> 
+    </div>
+</div>
+
+    <div class="container seccionesamarillas-container">
+   <center>
+        <h2 id="section3"style="font-size: 50px;">Estrés postraumático</h2>
+    </center>
+    </div>
+
+    <div class="container text_estres-container">
+        
+        <div class=" text-left"> 
+            <img src="estres_2.jpeg" alt="Image description" class="imageestresdos-container" style="max-width: 25%;">
+            <p style="font-size: 20px;">Los periodistas que <span class="destacado-estresdos">cubren sucesos como guerras</span>, desastres naturales, accidentes, asesinatos, y situaciones de alto riesgo son considerados vulnerables. Estas condiciones difíciles <span class="destacado-estresdos">pueden afectar su salud física y emocional.</span></p>
+            <p style="font-size: 20px;">Diferentes estudios, confirman que los periodistas expuestos a estos <span class="destacado-estresdos">eventos trumático</span> son afectados emocionalmente. Incluyendo respuestas intrusivas y evitativas, así como síntomas depresivos.</p>
+        </p>
+        </div>
+        <div class="text text_estresdos-container"> 
+            
+            <p>Según el Manual Diagnóstico y Estadístico de los Trastornos Mentales, los síntomas del <span class="destacado-estresdos">trastorno evitativo</span> se agrupan en tres categorías:</p>
+            <p><span class="destacado-estresdos">Intrusivas:</span> Estas son por medio de pesadillas, recuerdos recurrentes y flashbacks sobre el momento difícil.</p>
+            <p><span class="destacado-estresdos">Evitativas:</span> Aquí se ven actitudes de alejamiento hacia los demás. Anestesia emocional, falta de interés a actividades que se realizaban anteriormente.</p>
+            <p><span class="destacado-estresdos">De activación:</span> Se muestra dificultad para conciliar el sueño, sobresaltos constantes, irritabilidad y problemas de atención.</p>
+            <p>Algunas formas comunes de enfrentar este estrés son desconectarse del trabajo, expresar emociones, hablar sobre el trauma y recordar el propósito de su trabajo. Por lo tanto, sugerencias para mejorar el entorno laboral incluyen humanizar la sala de redacción y proporcionar formación sobre cómo manejar las coberturas de eventos traumáticos.</p>
+        </div>
+        
+        
+    </div>
+</div>
+</div>
+</body>
+<center>
+    <a href="https://www.facebook.com/cosocfeutpl/videos/1466671693728219/" target="_blank">
+      <li style="font-size: 30px;">Puede interesarte este webinar sobre prevención de trastornos de estrés postraumático en periodistas</li>
+    </a>
+  </center>
+
+<div class="container seccionesverdes-container">
+<center>
+<h2 id="section4" style="font-size: 50px;">¿Cómo cuidar la salud mental de los periodistas?</h2>
+</center>
+</div>
+<div class="container text_consejos-container">
+    <img src="consejos_final.jpg" alt="Image description" class="imageconsejos-container" style="max-width: 40%;">
+<p style="font-size: 20px;">Los periodistas desempeñan un rol vital, pero es crucial cuidar su bienestar mental. Aquí algunos consejos relacionados con la terapia y el reconocimiento de la importancia de la salud mental:
+</p>
+<p style="font-size: 20px;">1. Buscar ayuda profesional:
+</p>
+<p style="font-size: 20px;">Es una práctica común y recomendada para afrontar desafíos emocionales. No hay razón para sentir vergüenza o prejuicio al tomar esta decisión.
+</p>
+<p style="font-size: 20px;">2. Definir horarios y canales de comunicación profesional:
+</p>
+<p style="font-size: 20px;">Establecer límites claros en cuanto a cuándo y cómo se puede contactar a los periodistas fuera del horario laboral. 
+</p>
+<p style="font-size: 20px;">3. Preservar tiempo diario para autocuidado y actividades familiares:
+</p>
+<p style="font-size: 20px;">Reservar momentos diarios para el autocuidado y actividades en familia es crucial. Esto puede incluir actividades relajantes, hobbies o simplemente tiempo de calidad con seres queridos.
+</p>
+<p style="font-size: 20px;">4. Evitar comer rápidamente o saltar comidas:
+</p>
+<p style="font-size: 20px;">Comer rápidamente o saltarse comidas puede afectar la salud física y mental.
+</p>
+
+
+</div>
+<div class="container subtitle-container">
+
+            <center>
+        <h3 style="font-size: 35px;">CONSEJOS PARA QUE LOS PERIODISTAS</h3>
+            <h3 style="font-size: 35px;"> CUIDEN LA SALUD MENTAL</h3>
+        </center>
+</div>
+<div class="container text_consejosdos-container">
+        <center>
+        <p style="font-size: 20px;">La forma en que los periodistas abordan los temas de salud mental tiene un impacto en <span class="destacado-consejos">cómo el público percibe y comprende estos problemas.</span> Sí hay algunas sugerencias para asegurarnos de que la <span class="destacado-consejos">información sobre salud mental</span> sea tratada con respeto y sensibilidad.</p>
+    </center>
+    </div>
+  
+</div>
+<center>
+    <div class="container seccionesamarillas-container">
+<h1 style="font-size: 50px;" tyle= "color: white;">REFERENCIAS</h1>
+</center>
+</div>
+<div class="container text-container">
+    <p style="font-size: 20px;">Cisneros-Vidal, Torres, & Bustamante-Granda. (2023). AUTOCUIDADO EN SALUD MENTAL  PARA PERIODISTAS EN SITUACIONES  ADVERSAS guía virtual (1.a ed.). Editorial Cedía.
+    </p>
+<p style="font-size: 20px;">Comunicación, G. (2021, 10 mayo). Los riesgos psicosociales en el sector de los medios de comunicación pasan, a menudo, desapercibidos. Geseme. https://geseme.com/los-riesgos-psicosociales-en-el-sector-de-los-medios-de-comunicacion-pasan-a-menudo-desapercibidos/
+    </p>
+    <p style="font-size: 20px;"> Enfermedad mental - Síntomas y causas - Mayo Clinic. (2022, 13 diciembre). https://www.mayoclinic.org/es/diseases-conditions/mental-illness/symptoms-causes/syc-20374968#:~:text=Cansancio%20importante%2C%20baja%20energ%C3%ADa%20y,las%20situaciones%20y%20las%20personas
+</p>
+        <p style="font-size: 20px;">Flores Morales, Rogelio, Reyes Pérez, Verónica, & Reidl Martínez, Lucy María. (2012). SÍNTOMAS DE ESTRÉS POSTRAUMÁTICO (EPT) EN PERIODISTAS MEXICANOS QUE CUBREN LA GUERRA CONTRA EL NARCOTRÁFICO. Suma Psicológica , 19 (1), 7-17.  http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S0121-43812012000100001&lng=en&tlng=es.
+</p>
+
+
+</div>
+
+<div class="container seccionesverdes-container">
+<center>
+    <p style="font-size: 20px;">Universidad Autónoma de Coahulia</p>
+    <p style="font-size: 20px;">Facultad de Ciencias de la Comunicación</p>
+    <p style="font-size: 20px;">Dirección: Zacatecas - Saltillo Km 3, Villas de San Lorenzo, 25092 Saltillo, Coah.</p>
+    <p style="font-size: 20px;">Teléfono: 844 417 0062</p>   
+</center>
+</div>
+</body>
+</html>
